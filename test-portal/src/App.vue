@@ -1,21 +1,23 @@
 <!-- https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started -->
 
 <template>
-<body> 
+<div id="app"> 
+  <h1>Contoso Pizzas</h1>
+  <div> <pizzas-item> </pizzas-item></div>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</body>
+  
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PizzasItem from './components/PizzasItem.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PizzasItem
   }
-}
+};
 </script>
 
 <style>
@@ -25,6 +27,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px;  
 }
 </style>
